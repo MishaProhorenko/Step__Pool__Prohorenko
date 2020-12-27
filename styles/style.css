@@ -32,7 +32,7 @@ html {
     padding: 24px 48px;
 }
 
-.navi__menu {
+.header-menu {
     width: 100%;
 }
 
@@ -77,12 +77,12 @@ html {
     background: rgba(0, 0, 0, 0.43);
 }
 
-.menu__link a {
+.menu__li a {
     background: rgba(0, 0, 0, 0.43);
     padding: 10px 18px;
 }
 
-.menu .navi__sub-menu {
+.menu .menu__sub-menu {
     display: none;
     position: absolute;
     top: 70px;
@@ -94,16 +94,16 @@ html {
     font-weight: 400;
 }
 
-.navi__sub-menu li a {
+.menu__sub-menu li a {
     color: #16202b;
     padding: 2px 20px 1px 8px;
 }
 
-.navi__sub-menu li a:hover {
+.menu__sub-menu li a:hover {
     background: rgba(0, 0, 0, 0.2);
 }
 
-.menu>li:hover .navi__sub-menu {
+.menu>li:hover .menu__sub-menu {
     display: block;
 }
 
@@ -124,7 +124,7 @@ html {
     font-family: 'Oswald', sans-serif;
 }
 
-.header__suptitle {
+.header__subtitle {
     font-weight: 100;
     font-size: 1.25rem;
     letter-spacing: 2px;

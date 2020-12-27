@@ -142,7 +142,7 @@
     .comment {
         height: 400px;
     }
-    .header__burger {
+    .navi__burger {
         display: block;
         position: relative;
         width: 30px;
@@ -150,7 +150,7 @@
         position: relative;
         z-index: 3;
     }
-    .header__burger span {
+    .navi__burger span {
         position: absolute;
         background: #fff;
         position: absolute;
@@ -160,7 +160,7 @@
         top: 9px;
         transition: all .3s ease 0s;
     }
-    .header__burger::before, .header__burger::after {
+    .navi__burger::before, .navi__burger::after {
         content: '';
         background: #fff;
         position: absolute;
@@ -169,10 +169,10 @@
         left: 0;
         transition: all .3s ease 0s;
     }
-    .header__burger::before {
+    .navi__burger::before {
         top: 0;
     }
-    .header__burger::after {
+    .navi__burger::after {
         bottom: 0;
     }
     .header__menu {
@@ -194,23 +194,24 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        width: 100%;
     }
-    .menu .navi__sub-menu {
+    .menu .menu__sub-menu {
         background: #1dd1a1;
-        width: 170px;
-        top: 145px;
+        width: 195px;
+        top: 120px;
     }
-    .menu .navi__sub-menu li a {
+    .menu .menu__sub-menu li a {
         color: #fff;
     }
-    .header__burger.active span {
+    .navi__burger.active span {
         transform: scale(0);
     }
-    .header__burger.active::before {
+    .navi__burger.active::before {
         transform: rotate(45deg);
         top: 9px;
     }
-    .header__burger.active::after {
+    .navi__burger.active::after {
         transform: rotate(-45deg);
         bottom: 9px;
     }
@@ -218,8 +219,8 @@
         font-size: 2rem;
         line-height: 2.5;
     }
-    .menu .navi__sub-menu{
-        width: 300px;
+    .menu .menu__sub-menu{
+       
     }
 }
 
@@ -438,12 +439,15 @@
     .gallery__image_g9{
         display: none;
     }
-    .gallery__images {
-        
+    .gallery__images {        
         grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-        
+        grid-template-columns: repeat(2, 1fr);        
     }
+    .menu .menu__sub-menu{
+        width: 172px;
+        top: 148px;
+    }
+    
 }
 
 @media screen and (max-width:375px) {
@@ -505,6 +509,10 @@
         height: 90px;
         left: 35%;
     }
+    .menu .menu__sub-menu {
+        width: 160px;
+        top: 168px;
+    }
 }
 
 @media screen and (max-width:320px) {
@@ -557,7 +565,7 @@
         margin: 15px;
         font-size: 1rem;
     }
-    .menu .navi__sub-menu {
+    .menu .menu__sub-menu {
         width: 155px;
         top: 165px;
     }
